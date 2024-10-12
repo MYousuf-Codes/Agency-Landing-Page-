@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Template Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      html {
+        scroll-behavior: smooth; /* Enable smooth scrolling */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#"
+            ><img
+              src="./assets/logo (2).png"
+              alt=""
+              style="padding: 0%; margin: 0%"
+          /></a>
+        </div>
+        <div id="hamburger" class="hamburger">☰</div>
+        <!-- Add this line for hamburger -->
+        <ul id="nav-links" class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="home"
+        class="hero-section"
+        style="
+          background-image: url('./assets/hero.jpg');
+          background-size: cover;
+          background-position: center;
+          height: 100vh;
+        "
+      >
+        <div
+          class="hero-content"
+          style="text-align: center; color: white; padding: 20px"
+        >
+          <h1>We build stunning websites</h1>
+          <p>Your success is our goal.</p>
+          <button id="getStartedBtn">Get Started</button>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="about-container">
+          <div class="about-image">
+            <img src="./assets/about.jfif" alt="About Us" />
+          </div>
+          <div class="about-content">
+            <h2>Who We Are?</h2>
+            <p>
+              We are a diverse team of innovative and passionate
+              professionals...
+            </p>
+            <h2>How We Work?</h2>
+            <p>We believe in a collaborative and transparent approach...</p>
+            <h2>Our Vision</h2>
+            <p>
+              Our vision is to become a leading force in the digital world...
+            </p>
+            <h2>Our Mission</h2>
+            <p>
+              Our mission is to deliver exceptional digital products and
+              services...
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="services-section">
+        <div class="service">
+          <h2>Web Design</h2>
+          <p>Pixel-perfect design solutions for your business.</p>
+        </div>
+        <div class="service">
+          <h2>Development</h2>
+          <p>High-quality code to power your digital presence.</p>
+        </div>
+        <div class="service">
+          <h2>SEO Optimization</h2>
+          <p>Boost your website's visibility on search engines.</p>
+        </div>
+        <div class="service">
+          <h2>Content Creation</h2>
+          <p>Engaging content tailored to your audience.</p>
+        </div>
+        <div class="service">
+          <h2>Web Design</h2>
+          <p>Pixel-perfect design solutions for your business.</p>
+        </div>
+        <div class="service">
+          <h2>Development</h2>
+          <p>High-quality code to power your digital presence.</p>
+        </div>
+        <div class="service">
+          <h2>SEO Optimization</h2>
+          <p>Boost your website's visibility on search engines.</p>
+        </div>
+        <div class="service">
+          <h2>Content Creation</h2>
+          <p>Engaging content tailored to your audience.</p>
+        </div>
+        <div class="service">
+          <h2>Web Design</h2>
+          <p>Pixel-perfect design solutions for your business.</p>
+        </div>
+        <div class="service">
+          <h2>Development</h2>
+          <p>High-quality code to power your digital presence.</p>
+        </div>
+        <div class="service">
+          <h2>SEO Optimization</h2>
+          <p>Boost your website's visibility on search engines.</p>
+        </div>
+        <div class="service">
+          <h2>Content Creation</h2>
+          <p>Engaging content tailored to your audience.</p>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio-section">
+        <div class="portfolio-item">
+          <img src="./assets/1.png" alt="Project 1" />
+          <h3>Project 1</h3>
+          <p>Brief description of Project 1.</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="./assets/2.png" alt="Project 2" />
+          <h3>Project 2</h3>
+          <p>Brief description of Project 2.</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="./assets/pr1.PNG" alt="Project 3" />
+          <h3>Project 3</h3>
+          <p>Brief description of Project 3.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <p>
+            We'd love to hear from you! Whether you have a question or need
+            assistance, feel free to reach out.
+          </p>
+
+          <div class="contact-info">
+            <div class="contact-map-wrapper">
+              <div class="contact-form">
+                <h3>Contact Us</h3>
+                <form action="/submit-form" method="POST">
+                  <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      placeholder="Your Message"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit">Send Message</button>
+                </form>
+
+                <p class="get-in-touch">Get in touch with us today!</p>
+              </div>
+
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509848!2d144.9537353153168!3d-37.8162799797518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f55e9b1%3A0x9b3d0e4af0e0eeb3!2sYour%20Agency%20Name!5e0!3m2!1sen!2sau!4v1600000000000!5m2!1sen!2sau"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <ul class="social-links">
+          <p style="font-weight: 300; font-size: large">Find Me:</p>
+          <li>
+            <a href="https://facebook.com/Muhammad-Yousuf" target="_blank">
+              <img src="./assets/linkedin.png" alt="LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/MYousuf-Codes" target="_blank">
+              <img src="./assets/facebook.png" alt="facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/m-yousuf575" target="_blank">
+              <img src="./assets/insta.png" alt="Instagram" />
+            </a>
+          </li>
+        </ul>
+        <p>&copy; 2024 Template Clone. All rights reserved.</p>
+        <p>Developed with ❤ by Muhammad Yousuf</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript/TypeScript -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
