@@ -223,6 +223,16 @@ header {
     padding: 20px;
 }
 
+.about-content h1 {
+    font-size: 4rem;
+    animation: slideInFromLeft 1s ease forwards;
+    text-align: left;
+}
+
+.about-content:hover {
+    color: #f0a500;
+}
+
 .about-content h2 {
     font-size: 2rem;
     margin-bottom: 15px;
@@ -296,6 +306,7 @@ body {
     opacity: 0;  /* Start hidden for animation */
     transform: translateY(20px); /* Start slightly lower */
 }
+
 
 /* Scroll Animation */
 @keyframes fadeInUp {
