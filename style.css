@@ -272,6 +272,16 @@ header {
     }
 }
 
+@media (max-width: 480px) {
+    .about-content h1 {
+        font-size: 3rem;
+    }
+    .about-content p {
+        font-size: 1.5rem;
+        
+    }
+}
+
 /* Basic Reset */
 * {
     margin: 0;
